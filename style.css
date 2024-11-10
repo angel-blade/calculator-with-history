@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgb(37, 33, 100) 0%, rgb(24, 24, 24) 0%, rgba(119,127,179,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 480px;
+    height: 700px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px; 
+    float: left;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    border-radius: 50px;
+    font-size: 40px;
+    border: none;
+    color: white;
+    margin: 10px 6px;
+    width: 22%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+.brightOrange{
+    background-color: rgb(255, 136, 0);
+}
+.darkGrey{
+    background-color: rgb(32, 32, 32);
+}
+.grey{
+    background-color: rgb(153, 153, 153);
+    color: black;
+}
+.display{
+    color: white;
+    font-size: 80px;
+    text-align: right;
+    padding: 10px 20px;
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.zero-btn{
+    padding-right: 38%;
+}
+
+.historyTab{
+    color: white;
+    width: 480px;
+    height: 700px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px; 
+    display: none;
+}
+
+.calculator, .historyTab{
+    margin: 10vh;
+    min-width: 480px;
+
+}
+
+.historyField{
+    list-style-position: inside;
+    margin-left: 25px;
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 30px;
+    border-bottom: 1px rgb(32, 32, 32) solid;
+    margin-right: 25px;
+}
+
+
+.clearBtn{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 64, 64);
+    font-size: 20px;
+}
+.historyHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
